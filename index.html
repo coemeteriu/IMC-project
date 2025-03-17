@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="stylemobile.css" media="screen and (max-width: 768px)" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="/images/ico-logo.png">
+</head>
+
+<body>
+    <div class="modal_error">
+        DIGITE APENAS NUMEROS.
+    </div>
+
+    <div class="container">
+        <main class="card">
+            <form class="form">
+                <img src="./images/tittle-logo.png" width="260px" height="260px" class="logo">
+                <h1 class="title"></h1>
+                <div class="input-wrapper">
+                    <label id="textName" for="name">Informe o seu nome:</label>
+                    <input id="name" type="text" placeholder="Opcional">
+                </div>
+
+                <div class="input-wrapper">
+                    <label id="textWeight" for="weight" onkeyup="AddComma(this);">Informe o seu peso:</label>
+                    <input id="weight" type="number" placeholder="Exemplo: 75">
+                </div>
+
+                <div class="input-wrapper">
+                    <label id="textHeight" for="height">Informe a sua altura:</label>
+                    <input id="height" type="number" placeholder="Exemplo: 160">
+                </div>
+
+                <fieldset class="field">
+                    <div class="male">
+                        <input class="M" type="radio" id="MALE" name="drone" value="male" /></input>
+                        <label for="MALE">Homem</label>
+                    </div>
+
+                    <div class="female">
+                        <input class="f" type="radio" id="FEMALE" name="drone" value="female" /></input>
+                        <label for="FEMALE">Mulher</label>
+                    </div>
+                </fieldset>
+                <div class="buttonok">
+                    <button type="submit">CALCULAR</button>
+                    <div class="footer">
+        
+                        <a href="https://github.com/WallaceSardinha" target="_blank"><img class="github"
+                                src="./images/github-logo.png"></a>
+                        <a href="https://www.linkedin.com/in/wallace-s-silva" target="_blank"><img class="linkedin"
+                                src="./images/linkedin-logo.png"></a>
+        
+                    </div>
+                </form>
+                
+                <div class="modal-wrapper" id="mw">
+                <div class="modal card">
+                    <h5 class="nameShow">
+                        <span></span>
+                    </h5>
+                    <h3 class="h3">
+                        <span>
+                        </span>
+                    </h3>
+                    <h2 class="title">
+                        <span></span>
+                    </h2>
+                    <h4 class="h4">
+                        <span></span>
+                    </h4>
+                    <p4 class="whs">
+                        <span></span>
+                    </p4>
+                    <p class="resultGradient">
+                        <span></span>
+                    </p>
+                    <p3 class="info">
+                        <span></span>
+                    </p3>
+                    <p5 class="ALERT"><span>Válido somente para adultos.</span></p5>
+                    <button id="close" class="BtnOk">
+                        OK
+                    </button>
+                </h3>
+            </div>
+        </div>
+        
+    </div>
+</main>
+    <script src="./main.js" defer></script>
+</body>
+
+</html>
